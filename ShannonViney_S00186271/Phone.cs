@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Dynamic;
@@ -31,7 +32,12 @@ namespace ShannonViney_S00186271
         }
         public Phone(int id, string name, decimal price, string operatingsystem, string os_image, string phone_image)
         {
-
+            ID = id;
+            Name = name;
+            Price = price;
+            OperatingSystem = operatingsystem;
+            OS_Image = os_image;
+            Phone_Image = phone_image;
         }
     }
 
