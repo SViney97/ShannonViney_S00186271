@@ -13,5 +13,12 @@ namespace ShannonViney_S00186271
         public string OperatingSystem { get; set; }
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
+
+        public decimal IncreasePrice (decimal percent, decimal price)
+        {
+            decimal Percent = (price / percent)*100;
+            decimal Price = price + Percent;
+            return Price;
+        }
     }
 }
