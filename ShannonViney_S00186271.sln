@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShannonViney_S00186271", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{4805F7DA-2F12-4E0C-86F5-EBCC64843E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneDataManagement", "PhoneDataManagement\PhoneDataManagement.csproj", "{5C266C62-86BD-4F6E-A797-444E83C833A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4805F7DA-2F12-4E0C-86F5-EBCC64843E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4805F7DA-2F12-4E0C-86F5-EBCC64843E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4805F7DA-2F12-4E0C-86F5-EBCC64843E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C266C62-86BD-4F6E-A797-444E83C833A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C266C62-86BD-4F6E-A797-444E83C833A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C266C62-86BD-4F6E-A797-444E83C833A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C266C62-86BD-4F6E-A797-444E83C833A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

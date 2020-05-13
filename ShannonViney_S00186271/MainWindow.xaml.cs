@@ -24,5 +24,15 @@ namespace ShannonViney_S00186271
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            PhoneData db = new PhoneData();
+        }
+
+        private void LBXPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
