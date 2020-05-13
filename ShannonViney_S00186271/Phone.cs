@@ -14,11 +14,11 @@ namespace ShannonViney_S00186271
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
 
-        public decimal IncreasePrice (decimal percent, decimal price)
+        public void IncreasePrice (decimal percent)
         {
-            decimal Percent = (price / percent)*100;
-            decimal Price = price + Percent;
-            return Price;
+            decimal Percent = (Price / percent)*100;
+             Price = Price + Percent;
+            
         }
     }
 }
