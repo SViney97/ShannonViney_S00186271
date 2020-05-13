@@ -25,14 +25,14 @@ namespace ShannonViney_S00186271
             
         }
 
-        //public Phone()
-        //{
+        public Phone()
+        {
 
-        //}
-        //public Phone(int id, string name, decimal price , string operatingsystem, string os_image, string phone_image)
-        //{
+        }
+        public Phone(int id, string name, decimal price, string operatingsystem, string os_image, string phone_image)
+        {
 
-        //}
+        }
     }
 
     public class PhoneData :DbContext

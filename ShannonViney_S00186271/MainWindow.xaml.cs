@@ -28,18 +28,25 @@ namespace ShannonViney_S00186271
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
-        }
-
-        private void LBXPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var query = from p in db.Phones
+           var query = from p in db.Phones
                         select new
                         {
                             p.OS_Image,
                             p.Name
                         };
-            string selected = LBXPhones.SelectedItem as string;
+            string selected = LBXPhones.ItemsSource as string; 
+        }
+
+        private void LBXPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Phone Phone = LBXPhones.SelectedItem as Phone;
+
+            if (Phone != null)
+            {
+                TBLKPrice.Text = Phone.Price.ToString("c");
+                IMGPhone.Source = new BitmapImage(new Uri(Phone.Phone_Image, UriKind.RelativeOrAbsolute));
+            }
+            
         }
     }
 }
