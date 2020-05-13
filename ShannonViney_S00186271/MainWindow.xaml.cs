@@ -20,6 +20,7 @@ namespace ShannonViney_S00186271
     /// </summary>
     public partial class MainWindow : Window
     {
+        PhoneData db = new PhoneData();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,12 +28,18 @@ namespace ShannonViney_S00186271
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            PhoneData db = new PhoneData();
+            
         }
 
         private void LBXPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            var query = from p in db.Phones
+                        select new
+                        {
+                            p.OS_Image,
+                            p.Name
+                        };
+            string selected = LBXPhones.SelectedItem as string;
         }
     }
 }
